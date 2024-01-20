@@ -1,6 +1,6 @@
 <div class="flex-container">
   <div class="logo clickable" (click)="routing.toHome()"><img src="../../assets/img/logo.jpg" alt="Logo"></div>
-  <div class="flex-item clickable" (click)="routing.toChiSiamo()"><p>Chi siamo</p></div>
+  <div class="flex-item clickable" (click)="showHideChiSiamo()"><p>Chi siamo</p></div>
   <div class="separator flex-item" style="width: 2px !important;"></div>
   <div class="flex-item clickable"><p>Soluzioni</p></div>
   <div class="separator flex-item"></div>
@@ -13,3 +13,8 @@
     Per il codice sorgente<br>clicca: <i (click)="routing.toGit()">quì</i>
   </div>
 </div>
+<div class="chi-siamo" [@chiSiamoAnim] = "chiSiamoShow ? 'aperto' : 'chiuso'">
+  <app-chi-siamo></app-chi-siamo>
+</div>
+
+

@@ -1,7 +1,9 @@
-<div class="left-bar">
-    <div class="title">Componenti:</div>
-    <ul>
-        <li *ngFor="let user of users" (mouseover)="changeState(user)" (mouseleave)="changeState(user)" [@Breathing]="user.state ? 'hover' : 'not-hover'">{{user.name}}</li>
-    </ul>
-    <div class="divisor"></div>
+<div class="container">
+    <div class="left-bar">
+        <div class="title">Componenti:</div>
+        <ul>
+            <li *ngFor="let user of users" (mouseover)="changeState(user)" (mouseleave)="changeState(user)" [@Breathing]="user.state ? 'hover' : 'not-hover'">{{user.name}}</li>
+        </ul>
+        <div class="divisor"></div>
+    </div>
 </div>

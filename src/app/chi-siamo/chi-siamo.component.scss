@@ -1,46 +1,48 @@
 .container {
-    margin-top: 8%;
-    height: 100%;
-    display: flex; /*added*/
-    flex-direction: column; /*added*/
-
     
-}
-.left-bar {
-    height: calc(100% - 80px);
-    background-color: rgb(0, 0, 0);
-    width: 500px;
-    color: white;
-    text-align: center;
-
-    .title {
-        font-family: Roobert, sans-serif;
-        font-size: 2.2em;
-        font-weight: 600;
-        padding: 40px;
-    }
-
-    ul {
-        text-align: left;
-        list-style: outside;
-        padding-left: 40px;
-        margin-bottom: 40px;
-
-        li {
+    width: 201vh;
+    height: calc(100vh - 80px);
+    background-color: red;
+    overflow: hidden;
+    position: relative;
+    
+    .left-bar {
+        overflow: hidden;
+        height: calc(100%);
+        background-color: rgb(0, 0, 0);
+        width: 500px;
+        color: white;
+        text-align: center;
+    
+        .title {
             font-family: Roobert, sans-serif;
-            font-size: 1.5em;
-            font-weight: 400;
-            color: white;
-            padding: 10px 20px;
-            width: fit-content;
-            border-radius: 50px;
+            font-size: 2.2em;
+            font-weight: 600;
+            padding: 40px;
         }
-    }
-
-    .divisor {
-        width: 80%;
-        height: 1px;
-        background-color: white;
-        margin: auto;
+    
+        ul {
+            text-align: left;
+            list-style: outside;
+            padding-left: 40px;
+            margin-bottom: 40px;
+    
+            li {
+                font-family: Roobert, sans-serif;
+                font-size: 1.5em;
+                font-weight: 400;
+                color: white;
+                padding: 10px 20px;
+                width: fit-content;
+                border-radius: 50px;
+            }
+        }
+    
+        .divisor {
+            width: 80%;
+            height: 1px;
+            background-color: white;
+            margin: auto;
+        }
     }
 }

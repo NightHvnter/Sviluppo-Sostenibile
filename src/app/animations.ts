@@ -35,3 +35,18 @@ export const Breathing = trigger('Breathing', [
     animate('.2s')
   ])
 ])
+
+export const chiSiamoAnim = trigger('chiSiamoAnim', [
+  state('aperto', style({
+    transform: 'translateX(-100%)'
+  })),
+  state('chiuso', style({
+    transform: 'translateX(0)'
+  })),
+  transition('aperto => chiuso', [
+    animate('.40s ease-out')
+  ]),
+  transition('chiuso => aperto', [
+    animate('.40s ease-in-out')
+  ])
+])
