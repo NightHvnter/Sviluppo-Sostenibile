@@ -8,5 +8,8 @@
   <i class="fa fa-bars flex-item" (click)="showHideSettings()"></i>
 </div>
 <div class="settings" [@ParsingSettings]="settings ? 'aperto' : 'chiuso'">
-aaaaaa
+  <div class="title">Impostazioni</div>
+  <div class="text">
+    Per il codice sorgente<br>clicca: <i (click)="routing.toGit()">quì</i>
+  </div>
 </div>
