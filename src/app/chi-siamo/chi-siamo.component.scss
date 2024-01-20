@@ -1,8 +1,6 @@
 .container {
-    
     width: 201vh;
     height: calc(100vh - 80px);
-    background-color: red;
     overflow: hidden;
     position: relative;
     
@@ -37,12 +35,23 @@
                 border-radius: 50px;
             }
         }
-    
+
         .divisor {
             width: 80%;
             height: 1px;
             background-color: white;
             margin: auto;
+        }
+
+        .text {
+            font-family: Roobert, sans-serif;
+            font-size: 1.2em;
+            font-weight: 300;
+            max-width: 350px;
+            margin-top: 30px;
+            margin-left: 60px;
+            text-align: left;
+            font-style: italic;
         }
     }
 }
