@@ -20,3 +20,18 @@ export const ParsingSettings = trigger('ParsingSettings', [
     animate('.40s ease-out')
   ])
 ])
+
+export const Breathing = trigger('Breathing', [
+  state('not-hover', style({
+    'background-color': 'none'
+  })),
+  state('hover', style({
+    'background-color': 'rgb(15, 9, 110)'
+  })),
+  transition('hover => not-hover', [
+    animate('.2s')
+  ]),
+  transition('not-hover => hover', [
+    animate('.2s')
+  ])
+])

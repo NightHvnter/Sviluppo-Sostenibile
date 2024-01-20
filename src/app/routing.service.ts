@@ -5,8 +5,16 @@ import { Router } from '@angular/router';
 })
 export class RoutingService {
 
+  toHome() {
+    this.router.navigateByUrl('home');
+  }
+
   toGit(){
-    window.location.href = 'https://github.com/NightHvnter/Sviluppo-Sostenibile/';
+    window.open('https://github.com/NightHvnter/Sviluppo-Sostenibile/');
+  }
+
+  toChiSiamo() {
+    this.router.navigateByUrl('chi-siamo');
   }
 
   constructor(private router: Router) { }

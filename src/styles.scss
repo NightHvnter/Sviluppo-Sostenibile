@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --standard-background: #F2E8CF;
+  --standard-background: #eaeaea;
   --color-1: #386641;
   --color-2: #6A994E;
   --color-3: #A7C957;
@@ -15,8 +15,9 @@
 
 html, body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
-  background-color: #F2E8CF;
+  background-color: var(--standard-background);
 }
