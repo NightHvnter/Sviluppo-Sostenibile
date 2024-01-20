@@ -1,0 +1,12 @@
+<div class="flex-container">
+  <div class="logo clickable"><img src="../../assets/img/logo.jpg" alt="Logo"></div>
+  <div class="flex-item clickable"><p>Chi siamo</p></div>
+  <div class="separator flex-item" style="width: 2px !important;"></div>
+  <div class="flex-item clickable"><p>Soluzioni</p></div>
+  <div class="separator flex-item"></div>
+  <div class="flex-item clickable"><p>Fonti</p></div>
+  <i class="fa fa-bars flex-item" (click)="showHideSettings()"></i>
+</div>
+<div class="settings" [@ParsingSettings]="settings ? 'aperto' : 'chiuso'">
+aaaaaa
+</div>
