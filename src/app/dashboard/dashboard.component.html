@@ -2,8 +2,10 @@
   <div class="logo clickable" (click)="routing.toHome()"><img src="../../assets/img/logo.jpg" alt="Logo"></div>
   <div class="flex-item clickable" (click)="showHideChiSiamo()"><p>Chi siamo</p></div>
   <div class="separator flex-item" style="width: 2px !important;"></div>
-  <div class="flex-item clickable"><p>Soluzioni</p></div>
-  <div class="separator flex-item"></div>
+  <div class="flex-item clickable" ><p>Soluzioni</p></div>
+  <div class="separator flex-item" style="width: 2px !important;"></div>
+  <div class="flex-item clickable" (click)="this.routing.toAgenda2030()"><p>Agenda 2030</p></div>
+  <div class="separator flex-item" style="width: 2px !important;"></div>
   <div class="flex-item clickable"><p>Fonti</p></div>
   <i class="fa fa-bars flex-item" (click)="showHideSettings()"></i>
 </div>

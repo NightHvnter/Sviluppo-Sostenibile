@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="title">Agenda 2030</div>
+  <div class="description-container">
+    <div class="text">Some Text</div>
+      <ul>
+        <li *ngFor="let goal of goals">
+          <img src="{{goal.imgSrc}}" alt="{{goal.name}}">
+        </li>
+      </ul>
+  </div>
+</div>

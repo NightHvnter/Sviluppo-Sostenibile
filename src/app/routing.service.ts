@@ -13,8 +13,8 @@ export class RoutingService {
     window.open('https://github.com/NightHvnter/Sviluppo-Sostenibile/');
   }
 
-  toChiSiamo() {
-    this.router.navigateByUrl('chi-siamo');
+  toAgenda2030() {
+    this.router.navigateByUrl('agenda-2030');
   }
 
   constructor(private router: Router) { }
