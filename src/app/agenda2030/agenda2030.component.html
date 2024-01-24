@@ -1,10 +1,12 @@
 <div class="container">
   <div class="title">Agenda 2030</div>
   <div class="description-container">
-    <div class="text">Some Text</div>
+    <div class="text">L'agenda 2030 per lo sviluppo sostenibile è un programma d'azione sottoscritto nel 2015 dai 193 paesi membri dell'ONU.
+      L'inizio del 2016 ha coinciso con l'esordio di questa Agenda, guidando il mondo sulla giusta strada da percorrere nell'arco di 15 anni.
+      Gli obiettivi per lo sviluppo sono comuni su un insieme di questioni importanti per questo sviluppo, dunque che riguardano tutti i paesi e tutti gli individui.</div>
       <ul>
         <li *ngFor="let goal of goals">
-          <img src="{{goal.imgSrc}}" alt="{{goal.name}}">
+          <img class="clickable" src="{{goal.imgSrc}}" alt="{{goal.name}}">
         </li>
       </ul>
   </div>

@@ -16,7 +16,10 @@ const routes: Routes = [
   },
   {
     path: 'agenda-2030',
-    component: Agenda2030Component
+    component: Agenda2030Component,
+    children: [
+      
+    ]
   }
 ];
 

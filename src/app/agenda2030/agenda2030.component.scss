@@ -1,6 +1,7 @@
 .container {
+  z-index: 50;
   position: relative;
-  height: 100%;
+  height: calc(96% - 80px);
   width: 100%;
   margin-top: 2%;
   text-align: center;
@@ -13,32 +14,60 @@
   }
 
   .description-container {
-
-
     .text {
-
+      max-width: 700px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 2%;
+      font-size: 1.4rem;
+      font-weight: 400;
+      font-family: Roobert,sans-serif;
     }
 
     ul {
-      display: flex;
-      flex-wrap: wrap;
-
-      text-align: left;
-      margin: 5%;
-
-      list-style: none;
-
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      justify-content: space-between;
+      max-width: 750px;
+      margin-top: 5%;
 
       li {
-        flex-grow: 4;
-        flex-direction: column;
-        margin: 40px;
+        padding: 10px;
+        display: inline;
+        justify-content: space-between;
 
         img {
           width: 100px;
           height: auto;
         }
+
+        img:hover {
+          animation: focus .3s forwards;
+        } 
       }
+
+      li:last-child {
+        position: relative;
+
+         img {
+          position: relative;
+          top: 50%;
+          transform: translateY(-25%);
+         }
+      }
+      
     }
+  }
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+@keyframes focus {
+  to {
+    transform: scale(1.5);
   }
 }
