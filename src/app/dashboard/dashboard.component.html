@@ -4,7 +4,7 @@
   <div class="separator flex-item" style="width: 2px !important;"></div>
   <div class="flex-item clickable" (click)="this.routing.toAgenda2030()"><p>Agenda 2030</p></div>
   <div class="separator flex-item" style="width: 2px !important;"></div>
-  <div class="flex-item clickable"><p>Fonti</p></div>
+  <div class="flex-item clickable" (click)="routing.toSources()"><p>Fonti</p></div>
   <i class="fa fa-bars flex-item clickable" (click)="showHideSettings()"></i>
 </div>
 <div class="settings" [@ParsingSettings]="settings ? 'aperto' : 'chiuso'">

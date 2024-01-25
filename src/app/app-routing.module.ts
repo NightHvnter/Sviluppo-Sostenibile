@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
 import { Agenda2030Component } from './agenda2030/agenda2030.component';
 import { GoalComponent } from './goal/goal.component';
+import { SourcesComponent } from './sources/sources.component';
 
 const routes: Routes = [
   {
@@ -22,13 +23,17 @@ const routes: Routes = [
       {
         path: ":goal",
         pathMatch: 'full',
-        redirectTo: '/:goal'
+        redirectTo: '/goals/:goal'
       }
     ]
   },
   { 
-    path: ':goal',
+    path: 'goals/:goal',
     component: GoalComponent
+  },
+  {
+    path: 'sources',
+    component: SourcesComponent
   }
 ];
 

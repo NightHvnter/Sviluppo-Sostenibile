@@ -154,5 +154,9 @@ export class RoutingService {
     this.router.navigateByUrl(`agenda-2030/${goal}`);
   }
 
+  toSources() {
+    this.router.navigateByUrl('sources');
+  }
+
   constructor(private router: Router) { }
 }

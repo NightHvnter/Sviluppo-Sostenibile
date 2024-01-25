@@ -1,6 +1,6 @@
 
 .first-container {
-  margin-top: 20%;
+  margin-top: 10%;
   text-align: center;
   .title{
     font-size: 2.9rem;
@@ -18,3 +18,43 @@
   }
 }
 
+.topic-1, .topic-2, .topic-3, .topic {
+  margin: 10%;
+  margin-top: 7%;
+}
+
+.flx {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.topic-2 .inner-container img {
+  object-fit: contain;
+  width: 600px;
+  height: auto;
+  margin-right: 5%;
+}
+
+.topic-1 .title, .topic-2 .title, .topic-3 .title, .topic .title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-family: Roobert,sans-serif;
+  margin-left: 5%;
+  margin-bottom: 3%;
+  
+}
+
+.topic-1 .text, .topic-2 .text, .topic-3 .text, .topic .text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: Roobert,sans-serif;
+}
+
+.topic ul li {
+  margin: 30px;
+}
+
+.topic ul li .title {
+  font-size: 1.8rem;
+  font-weight: 500;
+}

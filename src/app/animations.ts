@@ -50,3 +50,20 @@ export const chiSiamoAnim = trigger('chiSiamoAnim', [
     animate('.40s ease-in-out')
   ])
 ])
+
+export const parseFromRight = trigger('parseFromRight', [
+  state('on', style({
+    'transfor': 'translateX(0)',
+    'opacity': 1
+  })),
+  state('off', style({
+    'transfor': 'translateX(-500px)',
+    'opacity': 0
+  })),
+  transition('aperto => chiuso', [
+    animate('.40s ease-out')
+  ]),
+  transition('chiuso => aperto', [
+    animate('.40s ease-in-out')
+  ])
+])

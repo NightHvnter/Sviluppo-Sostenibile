@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
 import { Agenda2030Component } from './agenda2030/agenda2030.component';
 import { GoalComponent } from './goal/goal.component';
+import { SourcesComponent } from './sources/sources.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +18,14 @@ import { GoalComponent } from './goal/goal.component';
     DashboardComponent,
     ChiSiamoComponent,
     Agenda2030Component,
-    GoalComponent
+    GoalComponent,
+    SourcesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

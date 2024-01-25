@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": ".\\dist\\sviluppo-sostenibile-pj\\browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
