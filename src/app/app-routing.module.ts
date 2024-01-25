@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
 import { Agenda2030Component } from './agenda2030/agenda2030.component';
+import { GoalComponent } from './goal/goal.component';
 
 const routes: Routes = [
   {
@@ -18,8 +19,16 @@ const routes: Routes = [
     path: 'agenda-2030',
     component: Agenda2030Component,
     children: [
-      
+      {
+        path: ":goal",
+        pathMatch: 'full',
+        redirectTo: '/:goal'
+      }
     ]
+  },
+  { 
+    path: ':goal',
+    component: GoalComponent
   }
 ];
 

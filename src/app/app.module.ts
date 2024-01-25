@@ -8,6 +8,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ChiSiamoComponent } from './chi-siamo/chi-siamo.component';
 import { Agenda2030Component } from './agenda2030/agenda2030.component';
+import { GoalComponent } from './goal/goal.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { Agenda2030Component } from './agenda2030/agenda2030.component';
     HomeComponent,
     DashboardComponent,
     ChiSiamoComponent,
-    Agenda2030Component
+    Agenda2030Component,
+    GoalComponent
   ],
   imports: [
     BrowserModule,

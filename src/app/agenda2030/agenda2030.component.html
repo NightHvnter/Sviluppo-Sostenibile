@@ -6,8 +6,12 @@
       Gli obiettivi per lo sviluppo sono comuni su un insieme di questioni importanti per questo sviluppo, dunque che riguardano tutti i paesi e tutti gli individui.</div>
       <ul>
         <li *ngFor="let goal of goals">
-          <img class="clickable" src="{{goal.imgSrc}}" alt="{{goal.name}}">
+          <img class="clickable" src="{{goal.imgSrc}}" alt="{{goal.name}}" (click)="router.toGoal(goal.name, goal.id)">
+        </li>
+        <li>
+          <img src='../../assets/img/sdg/SDG-icon-IT-RGB-18.jpg' alt="Obiettivi per lo sviluppo sostenibile">
         </li>
       </ul>
   </div>
 </div>
+<router-outlet></router-outlet>
