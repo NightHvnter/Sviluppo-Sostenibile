@@ -150,7 +150,7 @@ export class RoutingService {
   }
 
   toGoal(goal: string, id: number) {
-    this.choosenGoal = id-1;
+    sessionStorage.setItem('currentGoal', (id-1).toString())
     this.router.navigateByUrl(`agenda-2030/${goal}`);
   }
 
